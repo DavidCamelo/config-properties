@@ -3,7 +3,7 @@ eureka:
     serviceUrl:
       defaultZone: http://eureka-server:8761/eureka
   instance:
-    prefer-ip-address: false
+    hostName: ${spring.application.name}
 management:
   endpoints:
     jmx:
