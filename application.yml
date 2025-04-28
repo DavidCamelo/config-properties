@@ -22,3 +22,21 @@ management:
 logging:
   pattern:
     console: "%d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %logger.%M - %msg %n"
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: root
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        batch_versioned_data: true
+        format_sql: true
+        generate_statistics: false
+        jdbc:
+          batch_size: 2
+        order_inserts: true
+        order_updates: true
+    show-sql: true
