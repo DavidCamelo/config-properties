@@ -1,0 +1,32 @@
+name: Infra Deployment
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Kubernetes Config
+        if: success()
+        uses: Azure/k8s-set-context@v4
+        with:
+          kubeconfig: ${{secrets.KUBE_CONFIG}}
+      - name: Kubernetes Deploy
+        if: success()
+        uses: Azure/k8s-deploy@v4
+        with:
+          action: deploy
+          manifests: |
+            kubernetes/mariadb/pvc.yml
+            kubernetes/mariadb/secret.yml
+            kubernetes/mariadb/deployment.yml
+            kubernetes/mariadb/service.yml
+            kubernetes/fluent/pvc.yml
+            kubernetes/fluent/deployment.yml
+            kubernetes/fluent/service.yml
+            kubernetes/zipkin/deployment.yml
+            kubernetes/zipkin/service.yml
