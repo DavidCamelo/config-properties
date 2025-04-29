@@ -1,13 +1,16 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: zipkin
+  name: fluent
   labels:
-    app: zipkin
+    app: fluent
 spec:
   selector:
-    app: zipkin
+    app: fluent
   ports:
-    - protocol: TCP
-      port: 9411
-      targetPort: 9411
+    - name: http
+      port: 24224
+      targetPort: 24224
+    - name: udp
+      port: 24224
+      targetPort: 24224
