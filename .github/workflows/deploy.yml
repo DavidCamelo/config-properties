@@ -32,3 +32,7 @@ jobs:
             kubernetes/zipkin/zipkin-deployment.yml
             kubernetes/zipkin/zipkin-service.yml
             kubernetes/zipkin/zipkin-ingress.yml
+            kubernetes/dbeaver/dbeaver-pvc.yml
+            kubernetes/dbeaver/dbeaver-deployment.yml
+            kubernetes/dbeaver/dbeaver-service.yml
+            kubernetes/dbeaver/dbeaver-ingress.yml
