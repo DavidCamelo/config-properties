@@ -1,7 +1,9 @@
 server:
   port: 8761
 eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 0
   client:
     register-with-eureka: false
     fetch-registry: false
-  renewalPercentThreshold: 0.85
+  renewalPercentThreshold: 0.49
