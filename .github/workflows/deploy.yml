@@ -26,9 +26,6 @@ jobs:
             kubernetes/mariadb/mariadb-secret.yml
             kubernetes/mariadb/mariadb-deployment.yml
             kubernetes/mariadb/mariadb-service.yml
-            kubernetes/fluent/fluent-pvc.yml
-            kubernetes/fluent/fluent-deployment.yml
-            kubernetes/fluent/fluent-service.yml
             kubernetes/zipkin/zipkin-deployment.yml
             kubernetes/zipkin/zipkin-service.yml
             kubernetes/zipkin/zipkin-ingress.yml
