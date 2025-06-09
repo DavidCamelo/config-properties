@@ -37,5 +37,3 @@ spring:
         order_inserts: true
         order_updates: true
     show-sql: true
-user-service-url: http://users
-product-service-url: http://products
