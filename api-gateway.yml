@@ -33,15 +33,15 @@ spring:
               - "https://product-ui.davidcamelo.com"
               - "https://react-ui.davidcamelo.com"
             allowedMethods:
-              - "GET"
-              - "POST"
-              - "PUT"
-              - "DELETE"
-              - "PATCH"
-              - "HEAD"
-              - "OPTIONS"
-              - "TRACE"
-              - "CONNECT"
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - PATCH
+              - HEAD
+              - OPTIONS
+              - TRACE
+              - CONNECT
             allowedHeaders:
               - "Content-Type"
               - "Authorization"
