@@ -1,0 +1,8 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mariadb://mariadb:3306/users?createDatabaseIfNotExist=true
+jwt:
+  access-token-expiration-ms: 3600000
+  refresh-token-expiration-ms: 604800000

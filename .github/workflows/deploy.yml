@@ -30,3 +30,4 @@ jobs:
             kubernetes/dbeaver/dbeaver-deployment.yml
             kubernetes/dbeaver/dbeaver-service.yml
             kubernetes/dbeaver/dbeaver-ingress.yml
+            kubernetes/spring-boot/jwt-secret.yml
