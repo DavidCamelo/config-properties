@@ -7,6 +7,9 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+      default-filters:
+        - name: Authentication
+        - StripPrefix=1
       routes:
         - id: openapi
           uri: http://api-gateway:8080
