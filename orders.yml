@@ -1,0 +1,5 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mariadb://mariadb:3306/orders?createDatabaseIfNotExist=true
