@@ -4,5 +4,5 @@ spring:
   datasource:
     url: jdbc:mariadb://mariadb:3306/users?createDatabaseIfNotExist=true
 jwt:
-  access-token-expiration-ms: 10000 # 3600000 -> 1 hour
-  refresh-token-expiration-ms: 60000 # 86400000 -> 1 days
+  access-token-expiration: 60000 # 3600000 -> 1 hour
+  refresh-token-expiration: 3600000 # 86400000 -> 1 days
