@@ -36,4 +36,4 @@ spring:
           batch_size: 2
         order_inserts: true
         order_updates: true
-    show-sql: true
+    show-sql: false
