@@ -1,0 +1,1 @@
+[![Infra Deployment](https://github.com/DavidCamelo/config-properties/actions/workflows/deploy.yml/badge.svg)](https://github.com/DavidCamelo/config-properties/actions/workflows/deploy.yml)
