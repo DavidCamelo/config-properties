@@ -1,7 +1,5 @@
 server:
   port: 8083
 spring:
-  datasource:
-    url: jdbc:mariadb://mariadb:3316/products?createDatabaseIfNotExist=true
   jpa:
     show-sql: true

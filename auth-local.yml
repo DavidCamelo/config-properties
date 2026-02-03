@@ -1,7 +1,7 @@
 server:
   port: 8081
 spring:
-  datasource:
-    url: jdbc:mariadb://mariadb:3316/users?createDatabaseIfNotExist=true
   jpa:
     show-sql: true
+jwt:
+  secret: REPLACE_FOR_THE_REAL_JWT_SECRET
