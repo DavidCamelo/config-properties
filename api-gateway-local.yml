@@ -20,11 +20,24 @@ spring:
         cors-configurations:
           '[/**]':
             allowedOrigins:
-              - "http://localhost"
-              - "http://components-ui"
-              - "http://user-ui"
-              - "http://product-ui"
-              - "http://react-ui"
+              - "http://localhost:6006"
+              - "http://localhost:8080"
+              - "http://localhost:4173"
+              - "http://localhost:4174"
+              - "http://localhost:4175"
+              - "http://localhost:4176"
+              - "http://localhost:5173"
+              - "http://localhost:5174"
+              - "http://localhost:5175"
+              - "http://localhost:5176"
+              - "http://components-ui:4173"
+              - "http://user-ui:4174"
+              - "http://product-ui:4175"
+              - "http://react-ui:4176"
+              - "http://components-ui:5173"
+              - "http://user-ui:5174"
+              - "http://product-ui:5175"
+              - "http://react-ui:5176"
             allowedMethods:
               - GET
               - POST
